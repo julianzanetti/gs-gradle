@@ -1,5 +1,5 @@
 node {
-  def myGradleContainer = docker.image('docker pull gradle:latest')
+  def myGradleContainer = docker.image('gradle:latest')
   myGradleContainer.pull()
   stage('SCM check y Preparacion') {
     checkout scm
